@@ -23,7 +23,14 @@
   --cp-panel-strong: rgba(255, 255, 255, 0.96);
   --cp-sheen: rgba(255, 255, 255, 0.55);
   --cp-highlight: rgba(177, 31, 75, 0.12);
+  --cp-birthday-bg: var(--cp-text);
+  --cp-birthday-panel: color-mix(in srgb, var(--cp-text) 82%, var(--cp-accent));
+  --cp-birthday-surface: var(--cp-bg-elevated);
+  --cp-birthday-copy: var(--cp-bg-elevated);
   --cp-birthday-ink: var(--cp-text);
+  --cp-birthday-gold: color-mix(in srgb, var(--cp-warning) 65%, var(--cp-text));
+  --cp-birthday-rose: color-mix(in srgb, var(--cp-accent) 70%, var(--cp-text));
+  --cp-birthday-leaf: color-mix(in srgb, var(--cp-success) 60%, var(--cp-text));
 }
 
 html[data-theme="dark"] {
@@ -51,7 +58,14 @@ html[data-theme="dark"] {
   --cp-panel-strong: rgba(41, 41, 41, 0.96);
   --cp-sheen: rgba(255, 255, 255, 0.04);
   --cp-highlight: rgba(253, 142, 161, 0.12);
+  --cp-birthday-bg: var(--cp-bg-elevated);
+  --cp-birthday-panel: color-mix(in srgb, var(--cp-bg-elevated) 82%, var(--cp-accent));
+  --cp-birthday-surface: var(--cp-surface);
+  --cp-birthday-copy: var(--cp-text);
   --cp-birthday-ink: var(--cp-accent-fg);
+  --cp-birthday-gold: color-mix(in srgb, var(--cp-warning) 58%, var(--cp-bg-elevated));
+  --cp-birthday-rose: color-mix(in srgb, var(--cp-accent) 52%, var(--cp-bg-elevated));
+  --cp-birthday-leaf: color-mix(in srgb, var(--cp-success) 50%, var(--cp-bg-elevated));
 }
 
 * {

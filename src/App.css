@@ -972,3 +972,200 @@ footer {
     animation: none;
   }
 }
+
+/* Romantic evening garden palette */
+.experience,
+.birthday-experience {
+  background: var(--cp-birthday-bg);
+}
+
+.aurora {
+  opacity: 0.1;
+}
+
+.aurora-one {
+  background: var(--cp-birthday-gold);
+}
+
+.aurora-two {
+  background: var(--cp-birthday-rose);
+}
+
+.birthday-experience {
+  color: var(--cp-birthday-copy);
+}
+
+.birthday-experience .topbar {
+  border-color: var(--cp-border);
+  color: var(--cp-birthday-copy);
+}
+
+.birthday-experience .eyebrow,
+.birthday-experience .birthday-kicker {
+  color: var(--cp-birthday-gold);
+}
+
+.birthday-experience .celebrate-button {
+  border: 1px solid var(--cp-border-strong);
+  background: var(--cp-birthday-panel);
+  color: var(--cp-birthday-copy);
+  box-shadow: none;
+}
+
+.birthday-experience .birthday-hero::before {
+  border-color: var(--cp-border);
+  background: var(--cp-birthday-panel);
+}
+
+.birthday-hero h1 {
+  color: var(--cp-birthday-copy);
+  text-shadow: none;
+}
+
+.birthday-hero h1 span {
+  color: var(--cp-birthday-gold);
+  text-shadow: none;
+}
+
+.hero-message {
+  color: var(--cp-birthday-copy);
+  opacity: 0.78;
+}
+
+.scroll-cue {
+  border: 1px solid var(--cp-border-strong);
+  background: var(--cp-birthday-rose);
+  color: var(--cp-birthday-copy);
+}
+
+.garden-glow {
+  background: var(--cp-accent-soft);
+  opacity: 0.5;
+}
+
+.sun-petal {
+  border-color: var(--cp-birthday-gold);
+  background: var(--cp-birthday-gold);
+}
+
+.sun-center {
+  border-color: var(--cp-birthday-rose);
+  background:
+    radial-gradient(circle, var(--cp-birthday-gold) 0 7%, transparent 8%),
+    var(--cp-birthday-bg);
+}
+
+.flower-stem,
+.flower-leaf {
+  background: var(--cp-birthday-leaf);
+}
+
+.rose-petal {
+  border-color: var(--cp-birthday-rose);
+  background: var(--cp-birthday-rose);
+}
+
+.rose-petal:nth-child(even),
+.rose-heart {
+  background: var(--cp-birthday-panel);
+}
+
+.floating-hearts span {
+  color: var(--cp-birthday-rose);
+}
+
+.memories {
+  border-color: var(--cp-border);
+  background: var(--cp-birthday-surface);
+}
+
+.memories-heading h2 {
+  color: var(--cp-birthday-rose);
+}
+
+.section-number {
+  color: var(--cp-birthday-gold);
+}
+
+.memory-card {
+  border: 1px solid var(--cp-border);
+  background: var(--cp-bg-elevated);
+  box-shadow: 0 0 2px var(--cp-border), 0 1px 2px var(--cp-border);
+}
+
+.memory-card img {
+  border: 1px solid var(--cp-border);
+}
+
+.memory-card figcaption {
+  color: var(--cp-text-muted);
+}
+
+.photo-tape {
+  border: 1px solid var(--cp-border);
+  background: var(--cp-panel);
+}
+
+.memory-centerpiece {
+  border: 1px solid var(--cp-border-strong);
+  background: var(--cp-birthday-panel);
+  color: var(--cp-birthday-copy);
+  box-shadow: 0 0 2px var(--cp-border), 0 1px 2px var(--cp-border);
+}
+
+.memory-centerpiece strong {
+  color: var(--cp-birthday-copy);
+  opacity: 0.72;
+}
+
+.love-letter {
+  background: var(--cp-birthday-panel);
+}
+
+.letter-card {
+  border: 1px solid var(--cp-border);
+  background: var(--cp-birthday-surface);
+  box-shadow: 0 0 2px var(--cp-border), 0 1px 2px var(--cp-border);
+}
+
+.letter-card::before {
+  border: 1px solid var(--cp-border);
+}
+
+.letter-card h2 {
+  color: var(--cp-birthday-rose);
+}
+
+.letter-card p {
+  color: var(--cp-text-muted);
+}
+
+footer {
+  border-color: var(--cp-border);
+  background: var(--cp-birthday-bg);
+  color: var(--cp-birthday-copy);
+  opacity: 0.78;
+}
+
+.locked-experience {
+  background:
+    radial-gradient(circle at 18% 22%, var(--cp-birthday-gold), transparent 24rem),
+    radial-gradient(circle at 82% 80%, var(--cp-birthday-rose), transparent 24rem),
+    var(--cp-birthday-bg);
+}
+
+.countdown-shell {
+  border: 1px solid var(--cp-border);
+  background: var(--cp-birthday-surface);
+  box-shadow: 0 0 2px var(--cp-border), 0 1px 2px var(--cp-border);
+}
+
+.time-unit {
+  border: 1px solid var(--cp-border);
+  background: var(--cp-birthday-panel);
+}
+
+.time-value,
+.time-label {
+  color: var(--cp-birthday-copy);
+}
