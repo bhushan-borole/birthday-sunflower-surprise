@@ -125,7 +125,7 @@ function BirthdayExperience({ reducedMotion }) {
       readThemeColor('--cp-warning'),
       readThemeColor('--cp-accent'),
       readThemeColor('--cp-success'),
-      readThemeColor('--cp-rose-soft'),
+      readThemeColor('--cp-accent-hover'),
     ]
 
     const end = Date.now() + 2200

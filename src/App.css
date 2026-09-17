@@ -4,9 +4,9 @@
   min-height: 100vh;
   overflow: hidden;
   background:
-    radial-gradient(circle at 15% 12%, var(--cp-highlight), transparent 28rem),
-    radial-gradient(circle at 87% 36%, var(--cp-warning-soft), transparent 30rem),
-    linear-gradient(155deg, var(--cp-bg-elevated), var(--cp-bg));
+    radial-gradient(circle at 15% 12%, var(--cp-accent-soft), transparent 28rem),
+    radial-gradient(circle at 87% 36%, var(--cp-sheen), transparent 30rem),
+    linear-gradient(155deg, var(--cp-surface), var(--cp-bg-elevated) 48%, var(--cp-bg));
 }
 
 .aurora {
@@ -23,13 +23,13 @@
 .aurora-one {
   top: -18rem;
   right: -10rem;
-  background: var(--cp-warning);
+  background: var(--cp-accent);
 }
 
 .aurora-two {
   bottom: -20rem;
   left: -12rem;
-  background: var(--cp-accent);
+  background: var(--cp-success);
 }
 
 .topbar {
@@ -88,8 +88,8 @@
   border: 1px solid var(--cp-border);
   border-radius: 16px;
   padding: clamp(42px, 8vw, 88px) clamp(22px, 7vw, 74px);
-  background: var(--cp-panel-strong);
-  box-shadow: 0 0 2px var(--cp-shadow-color), 0 1px 2px var(--cp-shadow-color);
+  background: var(--cp-surface);
+  box-shadow: 0 0 2px var(--cp-border), 0 1px 2px var(--cp-border);
   text-align: center;
 }
 
@@ -159,7 +159,7 @@
   padding: 18px 8px 14px;
   display: flex;
   flex-direction: column;
-  background: var(--cp-surface);
+  background: var(--cp-bg-elevated);
 }
 
 .time-value {
@@ -225,7 +225,7 @@
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: var(--cp-accent);
+  background: var(--cp-warning);
   opacity: 0.22;
   animation: twinkle calc(2.4s + (var(--star) % 5) * 0.5s) ease-in-out infinite;
 }
@@ -300,7 +300,7 @@
   left: 8%;
   height: 50%;
   border-radius: 50%;
-  background: var(--cp-warning-soft);
+  background: var(--cp-sheen);
   filter: blur(3rem);
 }
 
@@ -440,7 +440,7 @@
 .rose-petal:nth-child(even) {
   width: 58px;
   height: 68px;
-  background: var(--cp-rose-soft);
+  background: var(--cp-accent-hover);
 }
 
 .rose-heart {
@@ -516,8 +516,8 @@
   border: 1px solid var(--cp-border);
   border-radius: 16px;
   padding: 12px 12px 52px;
-  background: var(--cp-surface);
-  box-shadow: 0 0 2px var(--cp-shadow-color), 0 1px 2px var(--cp-shadow-color);
+  background: var(--cp-bg-elevated);
+  box-shadow: 0 0 2px var(--cp-border), 0 1px 2px var(--cp-border);
 }
 
 .memory-card-1 {
@@ -590,7 +590,7 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  background: var(--cp-panel-strong);
+  background: var(--cp-surface);
   color: var(--cp-accent);
   text-align: center;
   transform: translate(-50%, -50%) rotate(-4deg);
@@ -625,8 +625,8 @@
   border: 1px solid var(--cp-border);
   border-radius: 16px;
   padding: clamp(42px, 8vw, 86px);
-  background: var(--cp-panel-strong);
-  box-shadow: 0 0 2px var(--cp-shadow-color), 0 1px 2px var(--cp-shadow-color);
+  background: var(--cp-surface);
+  box-shadow: 0 0 2px var(--cp-border), 0 1px 2px var(--cp-border);
 }
 
 .letter-card::before {

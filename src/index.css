@@ -23,9 +23,6 @@
   --cp-panel-strong: rgba(255, 255, 255, 0.96);
   --cp-sheen: rgba(255, 255, 255, 0.55);
   --cp-highlight: rgba(177, 31, 75, 0.12);
-  --cp-warning-soft: rgba(245, 158, 11, 0.16);
-  --cp-rose-soft: #d95775;
-  --cp-shadow-color: rgba(0, 0, 0, 0.14);
 }
 
 html[data-theme="dark"] {
@@ -53,9 +50,6 @@ html[data-theme="dark"] {
   --cp-panel-strong: rgba(41, 41, 41, 0.96);
   --cp-sheen: rgba(255, 255, 255, 0.04);
   --cp-highlight: rgba(253, 142, 161, 0.12);
-  --cp-warning-soft: rgba(251, 191, 36, 0.12);
-  --cp-rose-soft: #e96f87;
-  --cp-shadow-color: rgba(0, 0, 0, 0.34);
 }
 
 * {
