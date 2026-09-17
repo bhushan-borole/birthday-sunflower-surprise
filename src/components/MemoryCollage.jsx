@@ -49,14 +49,29 @@ function MemoryPhoto({ memory, index, reducedMotion }) {
         type: reducedMotion ? 'tween' : 'spring',
       }}
     >
-      <span className="photo-tape" aria-hidden="true" />
-      <img
-        src={source}
-        alt={memory.alt}
-        loading={index < 2 ? 'eager' : 'lazy'}
-        onError={() => setSource(memory.fallback)}
-      />
-      <figcaption>{memory.caption}</figcaption>
+      <div className="frame-topbar" aria-hidden="true">
+        <span>Frame {String(index + 1).padStart(2, '0')}</span>
+        <span className="frame-dots">
+          <i />
+          <i />
+          <i />
+        </span>
+      </div>
+      <div className="memory-image-shell">
+        <img
+          src={source}
+          alt={memory.alt}
+          loading={index < 2 ? 'eager' : 'lazy'}
+          onError={() => setSource(memory.fallback)}
+        />
+        <span className="frame-index" aria-hidden="true">
+          {String(index + 1).padStart(2, '0')}
+        </span>
+      </div>
+      <figcaption>
+        <span>{memory.caption}</span>
+        <small>Our archive</small>
+      </figcaption>
     </motion.figure>
   )
 }

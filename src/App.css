@@ -1169,3 +1169,104 @@ footer {
 .time-label {
   color: var(--cp-birthday-copy);
 }
+
+/* Film-frame treatment for memory photos */
+.memory-card {
+  padding: 8px;
+  overflow: hidden;
+  background: var(--cp-surface);
+}
+
+.frame-topbar {
+  min-height: 34px;
+  padding: 0 4px 0 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--cp-text-soft);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.frame-dots {
+  display: flex;
+  gap: 5px;
+}
+
+.frame-dots i {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--cp-border-strong);
+}
+
+.frame-dots i:nth-child(2) {
+  background: var(--cp-birthday-gold);
+}
+
+.frame-dots i:nth-child(3) {
+  background: var(--cp-birthday-rose);
+}
+
+.memory-image-shell {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--cp-border);
+  border-radius: 0.625rem;
+  background: var(--cp-bg-elevated);
+}
+
+.memory-image-shell img {
+  border: 0;
+  border-radius: 0;
+}
+
+.frame-index {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  min-width: 38px;
+  border: 1px solid var(--cp-border);
+  border-radius: 0.625rem;
+  padding: 7px 8px;
+  background: var(--cp-panel-strong);
+  color: var(--cp-text);
+  font-size: 0.72rem;
+  font-variant-numeric: tabular-nums;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+.memory-card figcaption {
+  position: static;
+  min-height: 58px;
+  padding: 11px 6px 5px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  color: var(--cp-text);
+  line-height: 1.35;
+  white-space: normal;
+}
+
+.memory-card figcaption > span {
+  max-width: 75%;
+}
+
+.memory-card figcaption small {
+  color: var(--cp-text-soft);
+  font-size: 0.55rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.photo-tape {
+  display: none;
+}
