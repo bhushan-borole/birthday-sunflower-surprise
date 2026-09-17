@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+  <rect width="800" height="1000" fill="#f5f5f5"/>
+  <circle cx="650" cy="190" r="210" fill="#b11f4b" opacity=".12"/>
+  <circle cx="150" cy="840" r="220" fill="#16a34a" opacity=".12"/>
+  <path d="M250 650c55-190 245-190 300 0" fill="none" stroke="#f59e0b" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="320" cy="430" r="92" fill="#dedede"/>
+  <circle cx="480" cy="430" r="92" fill="#919191"/>
+  <text x="400" y="780" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="38" fill="#5c5c5c">a cosy memory goes here</text>
+  <text x="400" y="835" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="62" fill="#b11f4b">♥</text>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+  <rect width="800" height="1000" fill="#fcfbf8"/>
+  <circle cx="150" cy="170" r="180" fill="#b11f4b" opacity=".13"/>
+  <circle cx="680" cy="800" r="240" fill="#f59e0b" opacity=".18"/>
+  <path d="M250 650c55-190 245-190 300 0" fill="none" stroke="#16a34a" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="320" cy="430" r="92" fill="#919191"/>
+  <circle cx="480" cy="430" r="92" fill="#dedede"/>
+  <text x="400" y="780" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="38" fill="#5c5c5c">an adventure goes here</text>
+  <text x="400" y="835" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="62" fill="#b11f4b">✦</text>
+</svg>
