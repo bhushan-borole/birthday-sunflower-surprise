@@ -3,10 +3,7 @@
   isolation: isolate;
   min-height: 100vh;
   overflow: hidden;
-  background:
-    radial-gradient(circle at 15% 12%, var(--cp-accent-soft), transparent 28rem),
-    radial-gradient(circle at 87% 36%, var(--cp-sheen), transparent 30rem),
-    linear-gradient(155deg, var(--cp-surface), var(--cp-bg-elevated) 48%, var(--cp-bg));
+  background: var(--cp-bg);
 }
 
 .aurora {
@@ -16,20 +13,20 @@
   aspect-ratio: 1;
   border-radius: 50%;
   filter: blur(5rem);
-  opacity: 0.2;
+  opacity: 0.34;
   pointer-events: none;
 }
 
 .aurora-one {
   top: -18rem;
   right: -10rem;
-  background: var(--cp-accent);
+  background: var(--cp-warning);
 }
 
 .aurora-two {
   bottom: -20rem;
   left: -12rem;
-  background: var(--cp-success);
+  background: var(--cp-accent);
 }
 
 .topbar {
@@ -79,17 +76,22 @@
   display: grid;
   place-items: center;
   padding: 28px;
+  background:
+    radial-gradient(circle at 18% 22%, var(--cp-warning), transparent 24rem),
+    radial-gradient(circle at 82% 80%, var(--cp-success), transparent 24rem),
+    var(--cp-accent);
+  color: var(--cp-birthday-ink);
 }
 
 .countdown-shell {
   position: relative;
   z-index: 2;
   width: min(820px, 100%);
-  border: 1px solid var(--cp-border);
+  border: 2px solid var(--cp-text);
   border-radius: 16px;
   padding: clamp(42px, 8vw, 88px) clamp(22px, 7vw, 74px);
-  background: var(--cp-surface);
-  box-shadow: 0 0 2px var(--cp-border), 0 1px 2px var(--cp-border);
+  background: var(--cp-bg-elevated);
+  box-shadow: 14px 14px 0 var(--cp-text);
   text-align: center;
 }
 
@@ -140,7 +142,7 @@
 .hero-message {
   max-width: 590px;
   margin: 0 auto;
-  color: var(--cp-text-muted);
+  color: var(--cp-text);
   font-size: clamp(1rem, 2vw, 1.18rem);
   line-height: 1.72;
 }
@@ -154,16 +156,16 @@
 
 .time-unit {
   min-width: 0;
-  border: 1px solid var(--cp-border);
+  border: 2px solid var(--cp-text);
   border-radius: 0.625rem;
   padding: 18px 8px 14px;
   display: flex;
   flex-direction: column;
-  background: var(--cp-bg-elevated);
+  background: var(--cp-warning);
 }
 
 .time-value {
-  color: var(--cp-text);
+  color: var(--cp-birthday-ink);
   font-size: clamp(2rem, 7vw, 4rem);
   font-variant-numeric: tabular-nums;
   font-weight: 760;
@@ -173,7 +175,7 @@
 
 .time-label,
 .timezone-note {
-  color: var(--cp-text-soft);
+  color: var(--cp-birthday-ink);
   font-size: 0.68rem;
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -250,6 +252,47 @@
   padding: 28px 0 90px;
 }
 
+.birthday-experience {
+  background: var(--cp-warning);
+  color: var(--cp-birthday-ink);
+}
+
+.birthday-experience .topbar {
+  position: relative;
+  z-index: 8;
+  border-bottom: 2px solid var(--cp-text);
+  color: var(--cp-birthday-ink);
+}
+
+.birthday-experience .eyebrow,
+.birthday-experience .birthday-kicker {
+  color: var(--cp-birthday-ink);
+}
+
+.birthday-experience .celebrate-button {
+  border: 2px solid var(--cp-text);
+  background: var(--cp-accent);
+  color: var(--cp-accent-fg);
+  box-shadow: 4px 4px 0 var(--cp-text);
+}
+
+.birthday-experience .birthday-hero {
+  position: relative;
+}
+
+.birthday-experience .birthday-hero::before {
+  position: absolute;
+  z-index: -1;
+  top: 4%;
+  right: -38vw;
+  bottom: 4%;
+  left: 47%;
+  border-left: 2px solid var(--cp-text);
+  background: var(--cp-accent);
+  content: "";
+  transform: rotate(-4deg);
+}
+
 .hero-copy {
   position: relative;
   z-index: 3;
@@ -258,21 +301,31 @@
 .birthday-hero h1 {
   margin-right: 0;
   margin-left: 0;
+  text-shadow: 3px 3px 0 var(--cp-bg-elevated);
+  color: var(--cp-birthday-ink);
+}
+
+.birthday-hero h1 span {
+  color: var(--cp-accent);
+  text-shadow: 2px 2px 0 var(--cp-text);
 }
 
 .hero-message {
   margin-left: 0;
+  color: var(--cp-birthday-ink);
 }
 
 .scroll-cue {
   width: fit-content;
   margin-top: 34px;
-  border-bottom: 1px solid var(--cp-accent);
-  padding: 10px 0;
+  border: 2px solid var(--cp-text);
+  border-radius: 0.625rem;
+  padding: 12px 16px;
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  color: var(--cp-accent);
+  background: var(--cp-text);
+  color: var(--cp-bg-elevated);
   font-weight: 720;
   text-decoration: none;
 }
@@ -300,7 +353,7 @@
   left: 8%;
   height: 50%;
   border-radius: 50%;
-  background: var(--cp-sheen);
+  background: var(--cp-bg-elevated);
   filter: blur(3rem);
 }
 
@@ -476,9 +529,12 @@
 }
 
 .memories {
-  width: min(1180px, calc(100% - 40px));
+  width: 100%;
   margin: 0 auto;
-  padding: 110px 0 90px;
+  border-top: 2px solid var(--cp-text);
+  border-bottom: 2px solid var(--cp-text);
+  padding: 110px max(20px, calc((100vw - 1180px) / 2)) 90px;
+  background: var(--cp-bg-elevated);
 }
 
 .memories-heading {
@@ -496,10 +552,14 @@
   line-height: 0.96;
 }
 
+.memories-heading h2 {
+  color: var(--cp-accent);
+}
+
 .memories-heading p {
   max-width: 590px;
   margin: 0 auto;
-  color: var(--cp-text-muted);
+  color: var(--cp-text);
   font-size: 1.06rem;
   line-height: 1.7;
 }
@@ -513,11 +573,11 @@
   position: absolute;
   width: min(30vw, 330px);
   margin: 0;
-  border: 1px solid var(--cp-border);
+  border: 2px solid var(--cp-text);
   border-radius: 16px;
   padding: 12px 12px 52px;
-  background: var(--cp-bg-elevated);
-  box-shadow: 0 0 2px var(--cp-border), 0 1px 2px var(--cp-border);
+  background: var(--cp-warning);
+  box-shadow: 8px 8px 0 var(--cp-text);
 }
 
 .memory-card-1 {
@@ -544,7 +604,7 @@
   display: block;
   width: 100%;
   aspect-ratio: 4 / 5;
-  border: 1px solid var(--cp-border);
+  border: 2px solid var(--cp-text);
   border-radius: 0.625rem;
   object-fit: cover;
   filter: saturate(0.94);
@@ -556,7 +616,7 @@
   bottom: 16px;
   left: 16px;
   overflow: hidden;
-  color: var(--cp-text-muted);
+  color: var(--cp-birthday-ink);
   font-size: 0.8rem;
   font-weight: 650;
   text-overflow: ellipsis;
@@ -570,8 +630,8 @@
   left: 50%;
   width: 74px;
   height: 30px;
-  border: 1px solid var(--cp-border);
-  background: var(--cp-panel);
+  border: 2px solid var(--cp-text);
+  background: var(--cp-accent);
   opacity: 0.9;
   transform: translateX(-50%) rotate(-3deg);
 }
@@ -583,15 +643,16 @@
   left: 50%;
   width: 230px;
   aspect-ratio: 1;
-  border: 1px solid var(--cp-accent);
+  border: 2px solid var(--cp-text);
   border-radius: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  background: var(--cp-surface);
-  color: var(--cp-accent);
+  background: var(--cp-accent);
+  color: var(--cp-accent-fg);
+  box-shadow: 8px 8px 0 var(--cp-text);
   text-align: center;
   transform: translate(-50%, -50%) rotate(-4deg);
 }
@@ -603,7 +664,7 @@
 
 .memory-centerpiece strong {
   max-width: 150px;
-  color: var(--cp-text-muted);
+  color: var(--cp-accent-fg);
   font-size: 0.78rem;
   letter-spacing: 0.06em;
   line-height: 1.4;
@@ -615,24 +676,25 @@
 }
 
 .love-letter {
-  width: min(900px, calc(100% - 40px));
+  width: 100%;
   margin: 0 auto;
-  padding: 100px 0 140px;
+  padding: 100px max(20px, calc((100vw - 900px) / 2)) 140px;
+  background: var(--cp-accent);
 }
 
 .letter-card {
   position: relative;
-  border: 1px solid var(--cp-border);
+  border: 2px solid var(--cp-text);
   border-radius: 16px;
   padding: clamp(42px, 8vw, 86px);
-  background: var(--cp-surface);
-  box-shadow: 0 0 2px var(--cp-border), 0 1px 2px var(--cp-border);
+  background: var(--cp-bg-elevated);
+  box-shadow: 14px 14px 0 var(--cp-text);
 }
 
 .letter-card::before {
   position: absolute;
   inset: 18px;
-  border: 1px solid var(--cp-border);
+  border: 2px solid var(--cp-warning);
   border-radius: 0.625rem;
   content: "";
   pointer-events: none;
@@ -641,12 +703,13 @@
 .letter-card h2 {
   max-width: 680px;
   font-size: clamp(2.5rem, 5vw, 4.5rem);
+  color: var(--cp-accent);
 }
 
 .letter-card p {
   position: relative;
   max-width: 680px;
-  color: var(--cp-text-muted);
+  color: var(--cp-text);
   font-size: clamp(1rem, 1.8vw, 1.15rem);
   line-height: 1.82;
 }
@@ -681,12 +744,13 @@
 footer {
   width: min(1180px, calc(100% - 40px));
   margin: 0 auto;
-  border-top: 1px solid var(--cp-border);
+  border-top: 2px solid var(--cp-text);
   padding: 30px 0 38px;
   display: flex;
   justify-content: center;
   gap: 8px;
-  color: var(--cp-text-soft);
+  background: var(--cp-warning);
+  color: var(--cp-birthday-ink);
   font-size: 0.88rem;
   text-align: center;
 }
