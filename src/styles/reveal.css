@@ -1,0 +1,87 @@
+.birthday-reveal {
+  position: relative;
+  isolation: isolate;
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  padding: 50px 24px 90px;
+  background: var(--garden-night);
+  color: var(--garden-ivory);
+}
+.reveal-content {
+  position: relative; z-index: 2; text-align: center;
+  animation: reveal-arrival var(--reveal-duration) ease-in-out both;
+}
+.reveal-content .eyebrow { color: #edc4d2; letter-spacing: 0.24em; }
+.reveal-content h1 {
+  font-size: clamp(3.5rem, 7vw, 6rem); line-height: 1.03;
+  font-weight: 400; letter-spacing: -0.055em; margin: 24px 0;
+}
+.reveal-content h1 em { color: #f3bfd2; }
+.reveal-dedication { color: #e2bccb; font-size: 1rem; line-height: 1.7; font-style: italic; margin: 0; }
+.reveal-heart {
+  width: clamp(130px, 20vmin, 205px); height: auto;
+  overflow: visible; margin: 0 0 22px;
+}
+.reveal-heart-outline {
+  stroke: #f8d496; stroke-width: 1.2; stroke-linecap: round;
+  stroke-dasharray: 1; stroke-dashoffset: 0; fill: #d985a20b;
+  animation: reveal-heart-draw 1.35s 0.15s ease-in-out both;
+}
+.reveal-heart-inner {
+  stroke: #eba8c1; stroke-width: 0.5; stroke-linecap: round;
+  stroke-dasharray: 1; stroke-dashoffset: 0;
+  animation: reveal-heart-draw 1.3s 0.5s ease-in-out both;
+}
+.reveal-glow {
+  position: absolute; z-index: 0; inset: 10%;
+  background: radial-gradient(ellipse, #b94e776e 0%, #b94e7730 30%, transparent 68%);
+  opacity: 0.4; pointer-events: none;
+  animation: reveal-glow-bloom var(--reveal-duration) ease-in-out both;
+}
+.reveal-petals { position: absolute; z-index: 1; left: 50%; top: 40%; pointer-events: none; }
+.reveal-petal {
+  position: absolute; width: 10px; height: 19px;
+  border-radius: 90% 10% 80% 20%; background: #e9adbf;
+  opacity: 0;
+  animation: reveal-petal-flight 2.6s var(--petal-delay) cubic-bezier(0.13, 0.5, 0.4, 1) both;
+}
+.reveal-petal:nth-child(3n) { width: 6px; height: 11px; background: #edcf94; }
+.reveal-petal:nth-child(3n + 1) { background: #bd718c; }
+.birthday-reveal .reveal-skip {
+  position: absolute; z-index: 3; bottom: 22px;
+  color: #e3bdca; padding: 10px 16px;
+}
+.birthday-reveal .reveal-skip:hover { color: #fff0eb; }
+@keyframes reveal-arrival {
+  0% { opacity: 0; transform: translateY(14px) scale(0.97); }
+  18%, 85% { opacity: 1; transform: translateY(0) scale(1); }
+  100% { opacity: 0; transform: translateY(-8px) scale(1.015); }
+}
+@keyframes reveal-heart-draw {
+  from { stroke-dashoffset: 1; opacity: 0; }
+  to { stroke-dashoffset: 0; opacity: 1; }
+}
+@keyframes reveal-glow-bloom {
+  0% { opacity: 0; transform: scale(0.75); }
+  50%, 80% { opacity: 0.4; transform: scale(1); }
+  100% { opacity: 0.18; transform: scale(1.07); }
+}
+@keyframes reveal-petal-flight {
+  0% { opacity: 0; transform: translate(0, 0) rotate(0) scale(0.3); }
+  20% { opacity: 0.8; }
+  75% { opacity: 0.6; }
+  100% { opacity: 0; transform: translate(var(--petal-x), var(--petal-y)) rotate(var(--petal-turn)) scale(1); }
+}
+.birthday-reveal[data-reduced="true"] *, .birthday-reveal[data-reduced="true"] *::before,
+.birthday-reveal[data-reduced="true"] *::after { animation: none !important; }
+.birthday-reveal[data-reduced="true"] .reveal-petals { display: none; }
+@media (max-height: 600px) {
+  .birthday-reveal { padding-top: 24px; padding-bottom: 65px; }
+  .reveal-heart { width: 92px; margin-bottom: 8px; }
+  .reveal-content h1 { font-size: 2.7rem; margin: 15px 0; }
+  .reveal-content .eyebrow { font-size: 8px; }
+  .reveal-dedication { font-size: 0.85rem; }
+  .birthday-reveal .reveal-skip { bottom: 9px; }
+}

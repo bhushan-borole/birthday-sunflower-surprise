@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
-  <rect width="800" height="1000" fill="#f7f4ef"/>
-  <circle cx="640" cy="170" r="190" fill="#f59e0b" opacity=".2"/>
-  <circle cx="180" cy="820" r="250" fill="#b11f4b" opacity=".12"/>
-  <path d="M250 650c55-190 245-190 300 0" fill="none" stroke="#b11f4b" stroke-width="18" stroke-linecap="round"/>
-  <circle cx="320" cy="430" r="92" fill="#dedede"/>
-  <circle cx="480" cy="430" r="92" fill="#919191"/>
-  <text x="400" y="780" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="38" fill="#5c5c5c">your favourite photo here</text>
-  <text x="400" y="835" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="62" fill="#b11f4b">♥</text>
+  <rect width="800" height="1000" fill="#10172e"/>
+  <circle cx="594" cy="190" r="142" fill="#fff4d6"/>
+  <circle cx="652" cy="160" r="142" fill="#10172e"/>
+  <path d="M92 832c86-164 156-236 237-315M92 832c108-89 212-115 357-61M218 670c-3-75 18-133 65-185" fill="none" stroke="#8e9d88" stroke-width="12" stroke-linecap="round"/>
+  <path d="M282 438c-15-55 36-94 69-51 33-43 84-4 69 51-16 58-69 80-69 80s-53-22-69-80Z" fill="#d6b878" opacity=".88"/>
+  <circle cx="160" cy="180" r="5" fill="#f0dca7"/>
+  <circle cx="236" cy="274" r="3" fill="#fff4d6"/>
+  <text x="400" y="920" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#f7f1e4">Your photograph here</text>
 </svg>

@@ -1,10 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
-  <rect width="800" height="1000" fill="#fcfbf8"/>
-  <circle cx="150" cy="170" r="180" fill="#b11f4b" opacity=".13"/>
-  <circle cx="680" cy="800" r="240" fill="#f59e0b" opacity=".18"/>
-  <path d="M250 650c55-190 245-190 300 0" fill="none" stroke="#16a34a" stroke-width="18" stroke-linecap="round"/>
-  <circle cx="320" cy="430" r="92" fill="#919191"/>
-  <circle cx="480" cy="430" r="92" fill="#dedede"/>
-  <text x="400" y="780" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="38" fill="#5c5c5c">an adventure goes here</text>
-  <text x="400" y="835" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="62" fill="#b11f4b">✦</text>
+  <rect width="800" height="1000" fill="#1b2440"/>
+  <circle cx="178" cy="158" r="106" fill="#f0dca7" opacity=".8"/>
+  <circle cx="218" cy="132" r="106" fill="#1b2440"/>
+  <path d="M120 790c122-186 250-228 438-70M265 790c38-176 117-256 222-344" fill="none" stroke="#8e9d88" stroke-width="14" stroke-linecap="round"/>
+  <g fill="#d6b878">
+    <circle cx="422" cy="430" r="66"/>
+    <circle cx="422" cy="328" r="42"/>
+    <circle cx="494" cy="366" r="42"/>
+    <circle cx="494" cy="452" r="42"/>
+    <circle cx="350" cy="366" r="42"/>
+    <circle cx="350" cy="452" r="42"/>
+  </g>
+  <circle cx="422" cy="410" r="38" fill="#10172e"/>
+  <circle cx="610" cy="204" r="4" fill="#fff4d6"/>
+  <circle cx="660" cy="290" r="3" fill="#f0dca7"/>
+  <text x="400" y="920" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#f7f1e4">Your photograph here</text>
 </svg>

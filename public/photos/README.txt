@@ -1,4 +1,4 @@
-ADD YOUR PHOTOS HERE
+Add your photographs here when you are ready.
 
 Use these exact filenames:
   01.jpg
@@ -6,6 +6,9 @@ Use these exact filenames:
   03.jpg
   04.jpg
 
-If any photo is missing, the website automatically uses its matching
-placeholder SVG. Portrait photos work best, but landscape photos are
-cropped automatically.
+These optional photographs follow the two supplied couple pictures in
+src/img/Image (4).jpg and src/img/Image (5).jpg. All are displayed without cropping.
+Missing optional images are skipped. Restart the dev server after adding them.
+
+The opening popup separately uses the supplied src/img/popup.jpg.
+The older illustrated placeholders are retained but are not displayed.
